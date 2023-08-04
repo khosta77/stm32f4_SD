@@ -4,13 +4,32 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-./src/main.c
+./src/main.c \
+./src/diskio.c \
+./src/ff.c \
+./src/ffsystem.c \
+./src/ffunicode.c \
+./src/spi.c \
+./src/spi_sd.c
 
 C_DEPS += \
-./src/main.d
+./src/main.d \
+./src/diskio.d \
+./src/ff.d \
+./src/ffsystem.d \
+./src/ffunicode.d \
+./src/spi.d \
+./src/spi_sd.d
+
 
 OBJS += \
-./src/main.o
+./src/main.o \
+./src/diskio.o \
+./src/ff.o \
+./src/ffsystem.o \
+./src/ffunicode.o \
+./src/spi.o \
+./src/spi_sd.o
 
 
 # Each subdirectory must supply rules for building sources it contributes
